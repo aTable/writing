@@ -1,0 +1,15 @@
+name: Advanced Usage
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: curl https://github.com/jgm/pandoc/releases/download/2.9.2/pandoc-2.9.2-1-amd64.deb -s -L --output pandoc.deb && sudo dpkg -i pandoc.deb && sudo apt install -y texlive texlive-xetex
+      - run: ./build.sh
+      - uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: build
