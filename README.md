@@ -1,5 +1,7 @@
 # Writing
 
+![Build](https://github.com/aTable/writing/workflows/Build/badge.svg)
+
 This is a template repository configured so you start writing your markdown files under `/docs` and they automatically get converted to your metadata output in `/build` available as a downloadable build artifact with each commit. By using [pandoc](https://pandoc.org/), we can focus on writing content:
 
 ```markdown
