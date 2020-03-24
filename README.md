@@ -14,6 +14,7 @@ This essay is great because:
 - point one
 - point two
 - point three
+- point four
 - ...
 
 ## Bibliography
